@@ -22,4 +22,28 @@ public class Complex {
         return imaginary;
     }
     
+    public Complex add (Complex other){
+        return new Complex (this.real + other.real, this.imaginary + other.imaginary);
+    }
     
+    public Complex subtract (Complex other){
+        return new Complex (this.real - other.real, this.imaginary - other.imaginary);
+    }
+    
+    public Complex multiply(Complex other) {
+        double r = (this.real * other.real) - (this.imaginary * other.imaginary);
+        double i = (this.real * other.imaginary) + (this.imaginary * other.real);
+        return new Complex(r, i);
+    }
+     
+    public Complex divide (Complex other){
+        return new Complex (this.real  other.real, this.imaginary  other.imaginary);
+    }
+    
+    public double abs(){
+        
+    }
+    
+    toString */
+
+ }
